@@ -46,9 +46,50 @@
   background-color: dimgray;
 }
 .container .conteudo {
-  width: 70vw;
+  width: 90vw;
   padding: 20px;
   margin: 5px;
   height: 70vh;
   background-color: dimgray;
+}
+.container .conteudo h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30pt;
+  font-weight: lighter;
+  font-family: "Lucida Sans";
+}
+
+.itens div {
+  height: 160px;
+  width: 30%;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0px 0px 5px silver;
+  margin: 10px;
+  cursor: pointer;
+  transition: ease 0.5s;
+}
+
+.itens div:hover {
+  transform: scale(1.1);
+  background-color: black;
+  color: #fff;
+}
+
+.itens {
+  display: flex;
+  flex-direction: row;
+}
+
+.itens h3 {
+  font-size: verdana;
+  font-size: 20pt;
+}
+.itens p {
+  font-family: sans-serif;
+  font-size: 12pt;
+}
+.itens .preco {
+  color: green;
 }
