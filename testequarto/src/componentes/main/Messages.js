@@ -1,16 +1,19 @@
+import { useCallback, useState } from "react";
+
 export default function Messages(props) {
+  const [produto, setProduto] = useState("");
   return (
     <div className="mensagens">
-      <h2>Titulo da menssagem</h2>
-      {props.dados.map((itens, ix) => {
-        <li key={ix}>
-          <h3>{itens.msg[ix].autor}</h3>
+      {props.info.map((m, i) => (
+        <div key={i}>
+          <h3>Cliente: {m.autor}</h3>
+          <h4> {m.titulo}</h4>
+          <p>{m.mensagem}</p>
           <br />
-          <p>{itens.msg[ix].mensagem}</p>
-        </li>;
-      })}
-      <h3>Autor</h3>
-      <p>Menssagem</p>
+          <hr />
+          <br />
+        </div>
+      ))}
     </div>
   );
 }
